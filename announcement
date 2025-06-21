@@ -1,0 +1,6 @@
+[
+  {
+    "zh": "Smart 策略组内核现已支持 policy-priority 参数来自定义调整节点权重，请自行替换测试、使用。",
+    "en": "The Smart policy group core now supports the policy-priority parameter to customize node weights. Please replace it for testing and use."
+  }
+]
