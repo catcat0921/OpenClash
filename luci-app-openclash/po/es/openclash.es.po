@@ -3464,6 +3464,9 @@ msgstr "Directo"
 msgid "Error: Config File Overwrite Failed,"
 msgstr "Error: falla al sobrescribir el archivo de configuración,"
 
+msgid "Error: Config File params checked Failed,"
+msgstr "Error: fallo en la verificación de parámetros del archivo de configuración,"
+
 msgid "Edit"
 msgstr "Editar"
 
