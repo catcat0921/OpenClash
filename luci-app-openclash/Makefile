@@ -61,7 +61,6 @@ define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)/root/etc/openclash/config
 	mkdir -p $(PKG_BUILD_DIR)/root/etc/openclash/rule_provider
 	mkdir -p $(PKG_BUILD_DIR)/root/etc/openclash/proxy_provider
-	mkdir -p $(PKG_BUILD_DIR)/root/etc/openclash/backup
 	mkdir -p $(PKG_BUILD_DIR)/root/etc/openclash/core
 	mkdir -p $(PKG_BUILD_DIR)/root/usr/share/openclash/backup/overwrite
 	cp -f "$(PKG_BUILD_DIR)/root/etc/config/openclash" "$(PKG_BUILD_DIR)/root/usr/share/openclash/backup/openclash" >/dev/null 2>&1
