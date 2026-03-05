@@ -21,7 +21,7 @@
 ---
 
 
-* IPK [前往下载](https://github.com/vernesong/OpenClash/releases)
+* IPK & APK [前往下载](https://github.com/vernesong/OpenClash/releases)
 
 
 依赖
