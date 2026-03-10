@@ -4933,6 +4933,10 @@
             var mixPort = StateManager.cached_proxy_info.mixed_port || '7893';
             var proxyIp = StateManager.current_status.daip;
             var proxyText = proxyIp + ':' + mixPort;
+            if (StateManager.cached_proxy_info.auth_user && StateManager.cached_proxy_info.auth_pass) {
+                proxyText = StateManager.cached_proxy_info.auth_user + ':' + StateManager.cached_proxy_info.auth_pass + '@' + proxyText;
+            }
+            proxyText = 'http://' + proxyText;
             copyToClipboard(proxyText, '<%:Mix proxy address copied:%> ');
         } else {
             alert('<%:Proxy info not available, please try again later%>');
