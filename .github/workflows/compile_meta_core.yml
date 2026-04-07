@@ -22,7 +22,7 @@ jobs:
           sudo apt-get -y install git
 
       - name: Clone OpenClash Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: core
       
@@ -61,7 +61,7 @@ jobs:
         arch: [normal, loongarch_abi1]
     steps:
       - name: Checkout OpenClash Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: core
 
@@ -111,7 +111,7 @@ jobs:
             go-loongarch-abi1-1.24.0-
 
       - name: Clone MetaCubeX/mihomo source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: MetaCubeX/mihomo
           ref: Alpha
@@ -163,7 +163,7 @@ jobs:
         arch: [normal, loongarch_abi1]
     steps:
       - name: Checkout OpenClash Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: core
 
@@ -215,7 +215,7 @@ jobs:
             go-loongarch-abi1-1.24.0-
 
       - name: Clone vernesong/mihomo source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: vernesong/mihomo
           ref: Alpha
@@ -266,7 +266,7 @@ jobs:
     if: always() && (needs.Get-Commit-id.outputs.current_id != needs.Get-Commit-id.outputs.upstream_id || needs.Get-Commit-id.outputs.current_smart_id != needs.Get-Commit-id.outputs.upstream_smart_id)
     steps:
       - name: Checkout OpenClash Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: core
 
